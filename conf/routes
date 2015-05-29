@@ -1,0 +1,25 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index
+
+# REST API
+GET     /api/wells/list             controllers.Application.listWells
+GET     /api/wells/:id              controllers.Application.getWell(id: Int)
+GET     /api/tags/:tag/history		controllers.Application.getTagHistory(tag: Int)
+GET     /api/tags/:tag/latest		controllers.Application.getTagLatest(tag: Int)
+
+# WebSocket data
+GET		/ws/connect					controllers.Application.connect
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+# Map static resources from the /public folder to the site template paths
+GET     /js/*file            		controllers.Assets.at(path="/public/js", file)
+GET     /css/*file              	controllers.Assets.at(path="/public/css", file)
+GET     /font-awesome/*file         controllers.Assets.at(path="/public/font-awesome", file)
+GET     /fonts/*file                controllers.Assets.at(path="/public/fonts", file)
+GET     /views/*file                controllers.Assets.at(path="/public/views", file)

@@ -1,0 +1,73 @@
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="wellDataController">
+
+    <div class="row">
+     <div class="col-lg-12">
+       <div class="ibox float-e-margins">
+		 <div class="ibox-title">
+	       <span class="label label-primary pull-right">{{ well.asset }}</span>
+	       <h4><b>{{ well.name }}</b></h4>
+	     </div>       
+	   </div>
+	 </div>
+    </div>
+    
+	<div class="row">
+
+	    <div class="col-lg-4">
+	        <div class="ibox float-e-margins">
+	            <div class="ibox-title">
+	                <span class="label label-primary pull-right"> Today</span>
+	                <h5 class="fa fa-tint"> Oil</h5>
+	            </div>
+	            <div class="ibox-content">
+	                <h1 class="no-margins">{{ oil.value }} bbl</h1>	            
+	                <div class="stat-percent font-bold text-navy">{{ oil.tag }}% <i class="fa fa-level-up"></i></div>
+	                <small></small>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="col-lg-4">
+	        <div class="ibox float-e-margins">
+	            <div class="ibox-title">
+	                <span class="label label-info pull-right">Today</span>
+	                <h5 class="fa fa-umbrella"> Water</h5>
+	            </div>
+	            <div class="ibox-content">
+	                <h1 class="no-margins">{{ wtr.value }} bbl</h1>
+	                <div class="stat-percent font-bold text-info">{{ water.tag }}% <i class="fa fa-level-up"></i></div>
+	                <small></small>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="col-lg-4">
+	        <div class="ibox float-e-margins">
+	            <div class="ibox-title">
+	                <span class="label label-warning pull-right">Today</span>
+	                <h5 class="fa fa-fire"> Gas</h5>
+	            </div>
+	            <div class="ibox-content">
+	                <h1 class="no-margins">{{ gas.value * 1200 }} MCF/d</h1>
+	                <div class="stat-percent font-bold text-warning">{{ gas.tag }}% <i class="fa fa-level-up"></i></div>
+	                <small></small>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Production History</h5>
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+                  <div class="flot-chart">
+                    <flot dataset="chartData" options="chartOptions"></flot>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,93 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul side-navigation class="nav" id="side-menu">
+            <li class="nav-header">
+
+                <div class="dropdown profile-element" dropdown>
+                    <a class="dropdown-toggle" dropdown-toggle href>
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">{{main.userName}}</strong>
+                             </span>
+                                <span class="text-muted text-xs block">Field Operator<b class="caret"></b></span>
+                            </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="profile">Profile</a></li>
+                        <li><a href="preferences">Preferences</a></li>
+                        <li class="divider"></li>
+                        <li><a href="../login.html">Log out</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    PV
+                </div>
+
+            </li>
+
+            <li ui-sref-active="active">
+                <a ui-sref="index.main"><i class="fa fa-area-chart"></i> <span class="nav-label">Production</span> </a>
+            </li>
+
+            <li ng-class="{active: $state.includes('wells-ef-kenedy')}">
+                <a href="index.html"><i class="fa fa-globe"></i> <span class="nav-label">Kenedy</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level" ng-class="{in: $state.includes('dashboards')}">
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 1})">Adams Tipton Unit 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 2})">Bailey Retzloff Unit 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 3})">Boris 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 4})">Carter Unit 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 5})">Challenger Unit 10H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 6})">Challenger Unit 11H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 7})">Davenport Unit 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 8})">Easley Unit 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 9})">Felix Unit 1H</a></li>
+                </ul>
+            </li>
+
+            <li ng-class="{active: $state.includes('wells-ef-gonzales')}">
+                <a href="index.html"><i class="fa fa-globe"></i> <span class="nav-label">Gonzales</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level" ng-class="{in: $state.includes('dashboards')}">
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 10})">Ann Friar Thomas 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 11})">Barnhart 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 12})">Colman 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 13})">Colman 2H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 14})">Dubosse 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 15})">Henderson 10H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 16})">Manning 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 17})">Robinson 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 18})">Ward E 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 19})">Ward F 2H</a></li>
+                </ul>
+            </li>
+
+            <li ng-class="{active: $state.includes('wells-ef-pleasanton')}">
+                <a href="index.html"><i class="fa fa-globe"></i> <span class="nav-label">Pleasanton</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level" ng-class="{in: $state.includes('dashboards')}">
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 20})">August Witte 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 21})">Beck Unit 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 22})">Chapman Unit 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 23})">Day-Lyssy Unit 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 24})">Esse 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 25})">George Long 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 26})">Hamilton 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 27})">Hamilton 2H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 28})">Keller 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 29})">May Girls 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 30})">May Girls 2H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 31})">Smith East 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 32})">Smith West 1H</a></li>
+                    <li ui-sref-active="active"><a ui-sref="well.detail({id: 33})">Wright Trust 1H</a></li>
+                </ul>
+            </li>
+
+            <li ui-sref-active="active">
+                <a ui-sref="index.main"><i class="fa fa-bell"></i> <span class="nav-label">Operations</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.main"><i class="fa fa-briefcase"></i> <span class="nav-label">Maintenance</span></a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
