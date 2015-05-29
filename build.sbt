@@ -1,4 +1,4 @@
-name := """AtosReactiveDemo"""
+name := """ReactiveDemo"""
 
 version := "1.0-SNAPSHOT"
 
