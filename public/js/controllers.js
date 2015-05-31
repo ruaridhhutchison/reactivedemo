@@ -85,8 +85,8 @@ function toChartArray(data, scale) {
   return result;
 }
 
-function webSocketFactory($websocket) {
-  var ws = $websocket('ws://localhost:9000/ws/connect')
+function webSocketFactory($websocket, $location) {
+  var ws = $websocket('ws://' + $location.host() + ':9000/ws/connect')
   var subscriptions = {}
 
   var subscr = function(tag, callBack) {
