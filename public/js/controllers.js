@@ -86,7 +86,7 @@ function toChartArray(data, scale) {
 }
 
 function webSocketFactory($websocket, $location) {
-  var protocol = $location.port() == 80 ? 'wss://' : 'ws://'
+  var protocol = $location.port() == 443 ? 'wss://' : 'ws://'
   var ws = $websocket(protocol + $location.host() + ':' + $location.port().toString() + '/ws/connect')
   var subscriptions = {}
 
